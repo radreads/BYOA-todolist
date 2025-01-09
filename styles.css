@@ -27,13 +27,15 @@ h1 {
 
 .columns {
     display: flex;
+    flex-direction: column;
     gap: 32px;
 }
 
 .column {
-    flex: 1;
+    width: 100%;
     background: white;
     padding: 24px;
+    padding-right: 32px;
     border-radius: 12px;
     border: 1px solid #e6e6e6;
 }
@@ -92,10 +94,10 @@ h2 {
 
 .button-container {
     position: fixed;
-    bottom: 40px;
+    bottom: 80px;
     right: 40px;
     display: flex;
-    gap: 16px;
+    gap: 24px;
 }
 
 .add-button, .clear-button {
@@ -178,4 +180,36 @@ h2 {
 .modal-buttons button:hover {
     transform: translateY(-2px);
     opacity: 0.9;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+.instructions {
+    text-align: center;
+    color: #666;
+    margin-bottom: 2rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.button-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.button-label {
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    color: #666;
+    margin-bottom: 20px;
 } 

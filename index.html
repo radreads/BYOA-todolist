@@ -8,7 +8,8 @@
 </head>
 <body>
     <div class="container">
-        <h1>Daily Tasks</h1>
+        <h1 class="title">Your daily to-do list</h1>
+        <p class="instructions">Start a new page every day. Prioritize your two most important tasks and everything else goes onto your Secondary list.</p>
         <div class="columns">
             <div class="column">
                 <h2>High Priority (Max 2)</h2>
@@ -20,8 +21,14 @@
             </div>
         </div>
         <div class="button-container">
-            <button id="add-task" class="add-button">+</button>
-            <button id="clear-tasks" class="clear-button">×</button>
+            <div class="button-group">
+                <button id="add-task" class="add-button">+</button>
+                <span class="button-label">ADD TASK</span>
+            </div>
+            <div class="button-group">
+                <button id="clear-tasks" class="clear-button">×</button>
+                <span class="button-label">CLEAR</span>
+            </div>
         </div>
     </div>
     <div id="priority-modal" class="modal">
